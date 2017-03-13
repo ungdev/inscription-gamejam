@@ -1,0 +1,18 @@
+{
+    "credentials": {
+        
+    },
+    "smtp": {
+        "host": "",
+        "port": ,
+        "auth": {
+            "user": "",
+            "pass": ""
+        }
+    },
+    "etupay": {
+        "id": 6,
+        "url": "https://etupay.utt.fr/initiate",
+        "key": ""
+    }
+}

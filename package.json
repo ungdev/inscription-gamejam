@@ -1,0 +1,25 @@
+{
+  "name": "inscription-gamejam",
+  "version": "1.0.0",
+  "description": "Parse les réponses du google-form pour envoyer des mails de confirmation, ainsi qu'un lien pour régler via etupay.",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ungdev/inscription-gamejam.git"
+  },
+  "author": "Axel Mousset",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ungdev/inscription-gamejam/issues"
+  },
+  "homepage": "https://github.com/ungdev/inscription-gamejam#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "google-spreadsheet": "^2.0.3",
+    "node-etupay": "git+https://github.com/ungdev/node-etupay.git",
+    "nodemailer": "^3.1.5"
+  }
+}
