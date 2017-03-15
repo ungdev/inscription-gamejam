@@ -4,6 +4,7 @@
   "description": "Parse les réponses du google-form pour envoyer des mails de confirmation, ainsi qu'un lien pour régler via etupay.",
   "main": "src/app.js",
   "scripts": {
+    "start": "node --harmony-async-await src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

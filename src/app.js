@@ -120,6 +120,7 @@ app.use((err, req, res, next) => {
 
 async function main() {
     await doc.useServiceAccountAuthAsync(config.credentials);
+    processSheet();
     setInterval(processSheet, PROCESS_INTERVAL);
     app.listen(8080);
     console.log('Serveur lancé');
