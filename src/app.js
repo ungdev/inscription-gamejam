@@ -93,9 +93,9 @@ app.get('/etupay/callback', async (req, res, next) => {
             }
 
             if (req.etupay.paid) {
-                return res.sendFile(path.resolve(__dirname + '/../public/success.html'));
+                return res.redirect('http://gamejam.utt.fr/?success');
             } else {
-                return res.sendFile(path.resolve(__dirname + '/../public/error.html'));
+                return res.redirect('http://gamejam.utt.fr/?error');
             }
         }
     };
@@ -104,13 +104,13 @@ app.get('/etupay/callback', async (req, res, next) => {
         console.error(`Impossible de retrouver ${req.etupay.service_data}`);
     }
 
-    return res.sendFile(path.resolve(__dirname + '/../public/error.html'));
+    return res.redirect('http://gamejam.utt.fr/?error');
 });
 
 // Gestion d'erreurs
 app.use((err, req, res, next) => {
     console.error(err.stack);
-    return res.sendFile(path.resolve(__dirname + '/../public/error.html'));
+    return res.redirect('http://gamejam.utt.fr/?error');
 });
 
 
