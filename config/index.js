@@ -1,4 +1,4 @@
-{
+module.exports = {
     "credentials": {
         "type": "service_account",
         "project_id": "inscription-gamejam",
@@ -12,16 +12,13 @@
         "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/639416529139-compute%40developer.gserviceaccount.com"
     },
     "smtp": {
-        "host": "smtp.mailtrap.io",
-        "port": 2525,
-        "auth": {
-            "user": "ed37a3f7039a0e",
-            "pass": "d617720e0b2db0"
-        }
+        "host": "smtp.utt.fr",
+        "port": 25,
+        "auth": {}
     },
     "etupay": {
         "id": 6,
         "url": "https://etupay.utt.fr/initiate",
-        "key": "1rn6ovE5QGhyde3ER/hyqwvcoEaf22h1XO4duPjXQuk="
+        "key": process.env.ETUPAY_KEY || "1rn6ovE5QGhyde3ER/hyqwvcoEaf22h1XO4duPjXQuk="
     }
 }
