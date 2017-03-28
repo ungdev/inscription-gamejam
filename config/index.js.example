@@ -1,4 +1,4 @@
-{
+module.exports = {
     "credentials": {
         
     },
@@ -13,6 +13,6 @@
     "etupay": {
         "id": 6,
         "url": "https://etupay.utt.fr/initiate",
-        "key": ""
+        "key": process.env.ETUPAY_KEY || ""
     }
-}
+};
